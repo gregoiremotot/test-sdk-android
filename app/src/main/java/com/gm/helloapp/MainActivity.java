@@ -1,8 +1,10 @@
-package com.example.myapplication2;
+package com.gm.helloapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import com.gm.hellolib.PrintHello;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        PrintHello.printMsg();
     }
 }
